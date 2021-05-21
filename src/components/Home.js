@@ -5,10 +5,33 @@ import Section from "./Section";
 const Home = () => {
   return (
     <Container>
-      <Section />
-      <Section />
-      <Section />
-      <Section />
+      <Section
+        title="Model S"
+        description="Order Online for Touchless Delivery"
+        backgroundImg="model-s.jpg "
+        leftBtnText="Custom Order"
+        rightBtnText="Existing inventory"
+      />
+      <Section
+        title="Lowest Cost Solar Panels in America"
+        description="Money-back guarantee"
+        backgroundImg="solar-panel.jpg "
+        leftBtnText="Order now"
+        rightBtnText="Learn more"
+      />
+      <Section
+        title="Solar for New Roofs"
+        description="Solar Roof Costs Less Than a New"
+        backgroundImg="solar-roof.jpg "
+        leftBtnText="Order now"
+      
+      />
+      <Section
+        title="Accessories"
+        description=""
+        backgroundImg="accessories.jpg "
+        leftBtnText="Order now"
+      />
     </Container>
   );
 };
