@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
 
 const Header = () => {
   return (
@@ -20,6 +21,9 @@ const Header = () => {
         <CustomMenu />
       </RightMenu>
       <BurgerNav>
+        <CloseWrapper>
+          <CustomClose />
+        </CloseWrapper>
         <li>
           <a href="#">Existing Inventory</a>
         </li>
@@ -108,9 +112,16 @@ const BurgerNav = styled.div`
   li {
     padding: 15px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  
-  a{
-    font-weight:600;
-  }
+
+    a {
+      font-weight: 600;
+    }
   }
 `;
+
+const CloseWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+`;
+const CustomClose = styled(CloseIcon)``;
